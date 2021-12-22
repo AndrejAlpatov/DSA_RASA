@@ -9,10 +9,21 @@ intents:
   - mood_unhappy
   - bot_challenge
   - what_is_mensa
+  - own_cup_in_kiosk
+  - operator_of_mensa
+  - studierendenwerk_other_mensen
+  - studierendenwerk_info
+  - studierenden_werk_activity
+  - invalid_question
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey {name}! How are you?"
+    buttons:
+    - title: "gut"
+      payload: "/mood_great"
+    - title: "nicht so gut"
+      payload: "mood_unhappy"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -29,9 +40,47 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
-  
+
   utter_what_is_mensa:
-  - text: "Menza ist der beste Ort zum Essen in Worms" 
+  - text: "Mensa ist der beste Ort zum Essen in Worms" 
+
+  utter_own_cup_in_kiosk:
+  - text: "JA, du kannst gerne deine eigene Tasse oder Becher mitbringen."
+  - text: "Du kannst deinen eigenen Becher oder die Tassen benutzen, die wir vorhanden haben."
+  - text: "JA, wenn du möchtest."
+  
+  utter_operator_of_mensa:
+  - text: "Die Mensa wird von dem Studierendenwerk Vorderpfalz betrieben."
+  - text: "Die Mensa wird von dem Studierendenwerk Vorderpfalz geleitet."
+  - text: "Das Studierendenwerk Vorderpfalz ist für die Mensa verantwortlich."
+  - text: "Die Mensa gehört dem Studierendenwerk Vorderpfalz."
+  
+  utter_studierendenwerk_other_mensen:
+  - text: "Das Studierendenwerk Vorderpfalz betreut mehrere Mensen und Cafeterien bei den Standorten Landau, Ludwigshafen, Worms, Germersheim, in den Weinbergen um Neustadt an der Weinstraße und eine mobile Mensa, welche an verschiedenen Orten sein kann."
+  - text: "Das Studierendenwerk ist nicht nur in Worms tätig. Es betreut auch Mensen in Landau, Ludwigshafen, Germersheim, in den Weinbergen um Neustadt an der Weinstraße und eine mobile Mensa, welche Currywurst verkauft."
+  - text: "Das Studierendenwerk Vorderpfalz betreut insgesamt sieben Mensen und Cafeterien. Zwei in Landau, zwei in Ludwigshafen, eine in Worms, eine in Germersheim und eine in den Weinbergen um Neustadt an der Weinstraße."
+
+  utter_studierendenwerk_info:
+  - text: "Das Studierendenwerk Vorderpfalz ist eine rechtsfähige Anstalt des öffentlichen Rechts. Ich kann dir Informationen zu den Themen und Aktivitäten oder anderen Standorten von Mensen und Cafeterien mitteilen." 
+  
+  utter_studierenden_werk_activity:
+  - text: "Das Studierendenwerk Vorderpfalz kümmert sich um die Mensa, studentisches Wohnen, Unterstützung bei einem Studium mit Kind, Sozialberatung, Psychologische Beratung, Studienfinanzierungsberatung, Förderung studentischer Projekte, Internationales, Studi-Jobs, Verwaltung eines schwarzen Brettes und Karriere." 
+  
+  utter_invalid_question:
+  - text: "Diese Frage kann ich nicht beantworten."
+  - text: "Tut mir leid, diese Frage kann ich nicht beantworten."
+  - text: "Auf diese Frage weiß ich keine Antwort."
+  - text: "Das weiß ich leider nicht."
+  
+entities:
+  - name
+
+slots:
+  name:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: name
 
 session_config:
   session_expiration_time: 60

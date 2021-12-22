@@ -4,7 +4,8 @@ nlu:
 - intent: greet
   examples: |
     - hey
-    - hello
+    - hello, my name is [Anna](name)
+    - hello, my name is [Marco](name)
     - hi
     - hello there
     - good morning
@@ -89,7 +90,193 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
- 
+
 - intent: what_is_mensa
   examples: |
    - Was ist mensa?
+   - Was ist für eine Mensa?
+
+- intent: own_cup_in_kiosk
+  examples: |
+   - Kann ich meinen eigenen Becher zum abfüllen am Kaffeeautomaten mitbringen
+   - Darf ich am Kaffeeautomaten meinen eigenen Becher befüllen
+   - Kann ich am Kaffeeautomaten meinen eigenen Becher befüllen
+   - Kann man am Kaffeeautomaten seinen eigenen Becher befüllen
+   - Kann ich meinen eigenen Becher zum abfüllen von Kaffee oder Tee mitbringen
+   - Kann ich meinen eigenen Becher zum abfüllen von Kaffee mitbringen
+   - Kann ich meinen eigenen Becher zum abfüllen von Tee mitbringen
+   - Kann ich meinen eigenen Becher zum abfüllen mitbringen
+   - Kann ich meinen eigenen Tasse mitbringen
+   - Kann ich meinen eigenen Tasse zum abfüllen mitbringen
+   - Kann ich meinen eigenen Tasse zum abfüllen von Kaffee mitbringen
+   - Kann ich seinen eigenen Tasse zum abfüllen von Kaffee oder Tee mitbringen
+   - Kann man seinen eigenen Tasse zum abfüllen von Kaffee oder Tee mitbringen
+   - Kann man seinen eigenen Tasse zum abfüllen von Kaffee mitbringen
+   - Kann man seinen eigenen Tasse zum abfüllen mitbringen
+   - Kann man seinen eigenen Tasse mitbringen
+   - Kann man seinen eigenen Becher zum abfüllen mitbringen
+   - Kann man seinen eigenen Becher zum abfüllen von Tee mitbringen
+   - Kann man seinen eigenen Becher zum abfüllen von Kaffee mitbringen
+   - Kann man seinen eigenen Becher zum abfüllen von Kaffee oder Tee mitbringen
+   - darf man seinen eigenen becher benutzen
+   - muss man eigenen becher mitbringen
+   - kann man seinen eigenen becher mitbringen
+
+- intent: operator_of_mensa
+  examples: |
+   - Zu wem gehört die Mensa
+   - Ist die Mensa Teil eines anderen Unternehmen
+   - zu welcher organisation gehört die mensa
+   - Ist die Mensa ein selbstständig
+   - welche organisation steckt hinter der Mensa
+   - durch wen wird die mensa organisiert
+   - wer organisiert die mensa
+   - durch wen wird die mensa finanziert
+   - wer finanziert die mensa
+   - gehört die mensa irgendwem
+   - wer trägt die verantwortung über die mensa
+   - wer betreibt die mensa
+   - durch wen wird die mensa geleitet
+   - wer leitet die mensa
+   - durch wen wird die mensa betrieben
+   - wem gehört die mensa
+   - wer ist der betreiber der mensa
+   - wer ist für die mensa verantwortlich
+   - wer kümmert sich um die mensa
+
+- intent: studierendenwerk_other_mensen
+  examples: |
+   - hat das studierendenwerk noch weitere mensen
+   - hat das studierendenwerk vorderpfalz noch weitere mensen
+   - weitere mensen
+   - gibt es noch mehr mensen
+   - gibt es weitere standorte vom studierendenwerk
+   - gibt es weitere standorte vom studierendenwerk vorderpfalz
+   - wo ist das studierendenwerk vorderpfalz noch tätig
+   - wo ist das studierendenwerk noch tätig
+   - wo ist der betreuer der mensa noch tätig
+   - wie viele standorte hat das studierendenwerk
+   - wie viele standorte hat das studierendenwerk vorderpfalz
+   - wie viele mensen gibt es
+   - gibt es weitere mensen
+   - was gehört dem studierendenwerk vorderpfalz noch
+   - was gehört dem studierendenwerk noch
+   - was leitet das studierendenwerk vorderpfalz noch
+   - was leitet das studierendenwerk noch
+   - hat das studierendenwerk vorderpfalz weitere mensen
+   - hat das studierendenwerk weitere mensen
+   - mensen studierendenwerk
+   - mensen studierendenwerk vorderpfalz
+   - standorte studierendenwerk vorderpfalz
+   - standorte studierendenwerk
+   - hat das studierendenwerk vorderpfalz weitere standorte
+   - hat das studierendenwerk weitere standorte
+   - an welchen hochschulen ist das studierendenwerk vorderpfalz aktiv
+   - an welchen hochschulen ist das studierendenwerk aktiv
+   - welche mensen gehören dem studierendenwerk vorderpfalz noch
+   - welche mensen gehören dem studierendenwerk noch
+   - an welchen hochschulen ist das studierendenwerk vorderpfalz noch aktiv
+   - an welchen standorten hat das studierendenwerk weitere mensen
+   - an welchen standorten hat das studierendenwerk vorderpfalz weitere mensen
+   - an welchen standorten hat das studierendenwerk vorderpfalz mensen
+   - an welchen standorten hat das studierendenwerk mensen
+   - an welchen hochschulen ist das studierendenwerk noch aktiv
+   - betreut das studierendenwerk vorderpfalz noch weitere mensen
+
+- intent: studierendenwerk_info
+  examples: |
+   - sage mir etwas zum betreiber der mensa
+   - kannst du mir etwas zum betreiber der mensa sagen
+   - was weißt du über den betreiber der mensa
+   - informationen über den betreiber
+   - was weißt du über den betreiber
+   - sage mir etwas zum betreiber
+   - kannst du mir etwas zum betreiber sagen
+   - Gibt es informationen zum studierenden werk der vorderpfalz
+   - Gibt es weitere informationen zum studierenden werk
+   - Gibt es informationen zum studierenden werk
+   - Was macht das studierenden Werk noch
+   - Ich möchte gerne mehr über den Betreiber der Mensa wissen
+   - Sag mir etwas über den Betreiber Mensa
+   - sage mir etwas zum studierendenwerk vorderpfalz
+   - sage mir etwas zum studierendenwerk
+   - sage mir etwas zum betreuer der mensa
+   - sage mir etwas zum betreuer
+   - informationen über das studierendenwerk vorderpfalz
+   - informationen über das studierendenwerk
+   - informationen über den betreuer
+   - kannst du mir etwas zum studierendenwerk vorderpfalz sagen
+   - kannst du mir etwas zum studierendenwerk sagen
+   - kannst du mir etwas zum betreuer sagen
+   - kannst du mir etwas zum betreuer der mensa sagen
+   - informationen zum betreuer der mensa
+   - studierendenwerk vorderpfalz
+   - studierendenwerk
+   - sage mir etwas über das studierendenwerk vorderpfalz
+   - sage mir etwas über das studierendenwerk
+   - sage mir etwas über den betreuer der mensa
+   - sage mir etwas über den betreuer
+   - was weißt du über das studierendenwerk vorderpfalz
+   - was weißt du über das studierendenwerk
+   - was weißt du über den betreuer
+   - was weißt du über den betreuer der mensa
+   - informationen zum betreuer
+   - informationen zum studierendenwerk
+   - informationen zum studierendenwerk vorderpfalz
+
+- intent: studierenden_werk_activity
+  examples: |
+   - aktivitäten und themen des studierendenwerkes der vorderpfalz
+   - aktivitäten und themen des studierendenwerkes
+   - aktivitäten und themen des betreuers der mensa
+   - aktivitäten und themen des betreuers
+   - themen und aktivitäten des studierendenwerkes der vorderpfalz
+   - themen und aktivitäten des studierendenwerkes
+   - themen und aktivitäten des betreuers der mensa
+   - themen und aktivitäten des betreuers
+   - was sind wie themen des studierendenwerkes der vorderpfalz
+   - was sind wie themen des studierendenwerkes vorderpfalz
+   - was sind wie themen des studierendenwerkes
+   - was sind wie themen des betreuers der mensa
+   - was sind wie themen des betreuers
+   - was sind wie aktivitäten des studierendenwerkes der vorderpfalz
+   - was sind wie aktivitäten des studierendenwerkes vorderpfalz
+   - was sind wie aktivitäten des studierendenwerkes
+   - was sind wie aktivitäten des betreuers der mensa
+   - was sind wie aktivitäten des betreuers
+   - mit was beschäftigt sich das studierendenwerk
+   - mit was beschäftigt sich das studierendenwerk vorderpfalz
+   - mit was beschäftigt sich das studierendenwerk noch
+   - mit was beschäftigt sich das studierendenwerk vorderpfalz noch
+   - mit was beschäftigt sich der betreuer
+   - mit was beschäftigt sich der betreuer noch
+   - welche beschäftigungen hat das studierendenwerk noch
+   - welche beschäftigungen hat das studierendenwerk
+   - welche beschäftigungen hat das studierendenwerk vorderpfalz noch
+   - welche beschäftigungen hat das studierendenwerk vorderpfalz
+   - welche beschäftigungen hat der betreiber der mensa
+   - welche beschäftigungen hat der betreiber der mensa noch
+   - welche beschäftigungen hat der betreiber
+   - welche beschäftigungen hat der betreiber noch
+   - was macht das studierendenwerk vorderpfalz
+   - was macht das studierendenwerk
+   - was macht der der betreiber der mensa
+   - was macht der betreiber
+   - welche dienstleistungen bietet das studierendenwerk vorderpfalz noch an
+   - welche dienstleistungen bietet das studierendenwerk noch an
+   - welche dienstleistungen bietet der betreiber der mensa noch an
+   - was mach der betreiber noch
+   - was macht der betreiber der mensa noch
+   - was macht das studierendenwerk vorderpfalz noch
+   - was macht das studierendenwerk noch
+
+- intent: invalid_question
+  examples: |
+   - kann ich mir essen nach hause bestellen
+   - kann man sich das essen liefern lassen
+   - ich würde gerne einen tisch reservieren
+   - kann ich in der mensa einen tisch reservieren
+   - kann ich das rezept haben
+   - wo gibt es das rezept für das essen
+   - wo gibt es das rezept
+   - kann ich das rezept von dem essen haben
