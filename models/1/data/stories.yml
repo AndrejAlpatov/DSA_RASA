@@ -28,3 +28,27 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: test path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - or:
+    - intent: affirm
+    - intent: mood_great
+  - action: utter_goodbye
+
+- story: test path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_goodbye
+  - checkpoint: ask_feedback
+
+- story: test path continue
+  steps:
+  - checkpoint: ask_feedback
+  - action: utter_cheer_up
+  - intent: deny
+  - action: utter_goodbye
