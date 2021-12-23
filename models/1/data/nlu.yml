@@ -280,3 +280,17 @@ nlu:
    - wo gibt es das rezept für das essen
    - wo gibt es das rezept
    - kann ich das rezept von dem essen haben
+ 
+- intent: opening_time
+  examples: |
+   - wann kann ich [in der Mensa](mensa_department) essen
+   - wann kann ich [am Kiosk](mensa_department) essen
+   
+- lookup: mensa_department
+  examples: |
+    - Kiosk
+    - Cafeteria
+    - Mensa
+    - in der Mensa
+    - am Kiosk
+    - in Mensa

@@ -15,6 +15,7 @@ intents:
   - studierendenwerk_info
   - studierenden_werk_activity
   - invalid_question
+  - opening_time
 
 responses:
   utter_greet:
@@ -74,6 +75,7 @@ responses:
   
 entities:
   - name
+  - mensa_department
 
 slots:
   name:
@@ -81,6 +83,9 @@ slots:
     mappings:
     - type: from_entity
       entity: name
+
+actions:
+  - action_opening_time
 
 session_config:
   session_expiration_time: 60
