@@ -280,7 +280,41 @@ nlu:
    - wo gibt es das rezept für das essen
    - wo gibt es das rezept
    - kann ich das rezept von dem essen haben
- 
+
+- intent: kiosk_menu_if
+  examples: |
+   - kann man [leberkäse](kiosk_menu) am Kiosk kaufen
+   - gibt es [sandwich](kiosk_menu) am Kiosk
+   - kann man [zum trinken](kiosk_menu) in der Cafeteria kaufen
+   - gibt es [zum essen](kiosk_menu) in der Cafeteria
+   - gibt es in der Cafeteria [torten](kiosk_menu)
+   - kann man am Kiosk etwas zum [essen](kiosk_menu) kaufen
+   - kann man in der Cafeteria etwas zum [trinken](kiosk_menu) kaufen
+   - gibt es in der Cafeteria etwas zu [trinken](kiosk_menu)
+   - kann man in der Cafeteria etwas [zum trinken](kiosk_menu)
+   - kann man Kiosk etwas [essen](kiosk_menu)
+   - gibt es am Kiosk etwas zu [trinken](kiosk_menu)
+   - kann man am Kiosk [essen](kiosk_menu)
+   - gibt es am kiosk was zum [trinken](kiosk_menu)
+   - gibt es am Kiosk [kuchen](kiosk_menu)
+
+- lookup: kiosk_menu
+  examples: |
+    - leberkäse
+    - sandwich
+    - zum trinken
+    - zum essen
+    - torten
+    - kuchen
+    - eis
+    - süßwaren
+    - süßigkeiten
+    - kaltgetränke
+    - heißgetränke
+    - essen
+    - trinken
+    - getränke
+
 - intent: opening_time
   examples: |
    - wann kann ich [in der Mensa](mensa_department) essen

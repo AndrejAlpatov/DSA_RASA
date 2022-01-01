@@ -26,8 +26,34 @@ rules:
   steps:
   - intent: operator_of_mensa
   - action: utter_own_cup_in_kiosk
-  
-- rule: Opening time
+
+- rule: Say hat das studierendenwerk vorderpfalz weitere mensen
+  steps:
+  - intent: studierendenwerk_other_mensen
+  - action: utter_studierendenwerk_other_mensen
+
+- rule: Say mir etwas zum betreiber der mensa
+  steps:
+  - intent: studierendenwerk_info
+  - action: utter_studierendenwerk_info
+
+- rule: Say was sind wie themen des studierendenwerkes der vorderpfalz
+  steps:
+  - intent: studierenden_werk_activity
+  - action: utter_studierenden_werk_activity
+
+- rule: Say kann ich mir essen nach hause bestellen
+  steps:
+  - intent: invalid_question
+  - action: utter_invalid_question
+
+- rule: Say wann kann ich in der Mensa essen
   steps:
   - intent: opening_time
   - action: action_opening_time
+
+- rule: Kann man sandwich am Kiosk kaufen
+  steps:
+  - intent: kiosk_menu_if
+  - action: action_kiosk_menu_if
+  
