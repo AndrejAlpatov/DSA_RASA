@@ -29,8 +29,10 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from .data_for_actions import mensa_names, mensa_department_db, kiosk_products
-from src.data_bank_functions.output_of_all_collections import data_bank_access
+from .data_for_actions import mensa_names, mensa_department_db
+from random import randint
+from .output_of_all_collections import data_bank_access
+from .list_values_to_low_case import list_value_to_low_case
 
 
 class ActionOpeningTimes(Action):
@@ -92,44 +94,81 @@ class ActionKioskMenuIf(Action):
         speech_text_positive_answers_list = answers['KIOSK_MENU_POSITIVE']
         speech_text_negative_answers_list = answers['KIOSK_MENU_NEGATIVE']
 
+        # Put all good values in one list
+        all_goods_orig = \
+            goods['SWEETS'] + goods['HOT_DRINKS'] + goods['COLD_DRINKS'] + goods['FOOD'] + goods['SWEETS_WORD'] +\
+            goods['DRINK_WORD'] + goods['FOOD_WORD']
+
+        # convert data bank values to low case
+        all_goods = list_value_to_low_case(all_goods_orig)
+        sweets = list_value_to_low_case(goods['SWEETS'])
+        hot_drinks = list_value_to_low_case(goods['HOT_DRINKS'])
+        cold_drinks = list_value_to_low_case(goods['COLD_DRINKS'])
+        food = list_value_to_low_case(goods['FOOD'])
+        sweets_words = list_value_to_low_case(goods['SWEETS_WORD'])
+        drink_words = list_value_to_low_case(goods['DRINK_WORD'])
+        food_words = list_value_to_low_case(goods['FOOD_WORD'])
+
+        # if slot value wasn't passed
         if not kiosk_menu:
-            msg = "Sie können auch einen bestimmteт Produktnamen angeben "
+            msg = "Sie können einen bestimmten Produktnamen angeben "
             dispatcher.utter_message(text=msg)
             return []
 
         kiosk_menu_in_low_case = kiosk_menu.lower()
 
-        if kiosk_menu_in_low_case not in kiosk_products:
+        # if the slot value is not in kiosk menu
+        if kiosk_menu_in_low_case not in all_goods:
             msg = f"Am Kiosk gibt es {kiosk_menu} nicht, oder vielleicht stimmt der Name nicht"
             dispatcher.utter_message(text=msg)
             return []
 
-        if kiosk_menu_in_low_case in mensa_names:
-            msg = "Die Mensa hat von 11 Uhr 30 bis 14 Uhr geöffnet."
-            dispatcher.utter_message(text=msg)
-            return []
-        else:
-            msg = "Von Montag bis Donnerstag ist der Kiosk von 8 bis 15 Uhr und freitags bis 14 Uhr geöffnet."
-            dispatcher.utter_message(text=msg)
-            return []
-
         # If slot value has product name
-        if food_type in goods['SWEETS'] or food_type in goods['HOT_DRINKS'] or food_type in goods['COLD_DRINKS']:
-            # Zufällige Antwortauswahl aus der Liste
-            list_index = randint(0, len(speech_text_positive_answers_list) - 1)
-            speech_text = speech_text_positive_answers_list[list_index]
+        if kiosk_menu_in_low_case in sweets or kiosk_menu_in_low_case in hot_drinks or \
+                kiosk_menu_in_low_case in cold_drinks or kiosk_menu_in_low_case in food:
+
+            # Choose random answer from list
+            list_index_ = randint(0, len(speech_text_positive_answers_list) - 1)
+            msg = speech_text_positive_answers_list[list_index_] + f" {kiosk_menu.upper()} steht auf der Speisekarte"
+
+            dispatcher.utter_message(text=msg)
+            return []
 
         # If slot value has sweets product group name
-        elif food_type in goods['SWEETS_WORD']:
-            list_index = randint(0, len(speech_text_positive_answers_list) - 1)
-            speech_text = speech_text_positive_answers_list[list_index] + ' ' + prompts['SWEET_CHOOSE']
+        elif kiosk_menu_in_low_case in sweets_words:
+
+            # Choose random answer from list
+            list_index_ = randint(0, len(speech_text_positive_answers_list) - 1)
+            msg = speech_text_positive_answers_list[list_index_] + ' ' + prompts['SWEET_CHOOSE']
+
+            dispatcher.utter_message(text=msg)
+            return []
 
         # If slot value has food product group name
-        elif food_type in goods['FOOD_WORD']:
+        elif kiosk_menu_in_low_case in food_words:
+
+            # Choose random answer from list
             list_index = randint(0, len(speech_text_positive_answers_list) - 1)
-            speech_text = speech_text_positive_answers_list[list_index] + ' ' + prompts['FOOD_CHOOSE']
+            msg = speech_text_positive_answers_list[list_index] + ' ' + prompts['FOOD_CHOOSE']
+
+            dispatcher.utter_message(text=msg)
+            return []
 
         # If slot value has drink product group name
-        elif food_type in goods['DRINK_WORD']:
+        elif kiosk_menu_in_low_case in drink_words:
+
+            # Choose random answer from list
             list_index = randint(0, len(speech_text_positive_answers_list) - 1)
-            speech_text = speech_text_positive_answers_list[list_index] + ' ' + prompts['DRINK_CHOOSE']
+            msg = speech_text_positive_answers_list[list_index] + ' ' + prompts['DRINK_CHOOSE']
+
+            dispatcher.utter_message(text=msg)
+            return []
+
+        # default negative answers for other cases
+        else:
+            # Choose random answer from list
+            list_index = randint(0, len(speech_text_negative_answers_list) - 1)
+            msg = speech_text_negative_answers_list[list_index]
+
+            dispatcher.utter_message(text=msg)
+            return []
