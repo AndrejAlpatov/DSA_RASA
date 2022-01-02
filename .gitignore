@@ -165,3 +165,6 @@ $RECYCLE.BIN/
 
 # rasa
 cache/
+
+# databank
+file_for_internal_usage.py

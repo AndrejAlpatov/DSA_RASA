@@ -280,3 +280,167 @@ nlu:
    - wo gibt es das rezept für das essen
    - wo gibt es das rezept
    - kann ich das rezept von dem essen haben
+
+- intent: kiosk_menu_if
+  examples: |
+   - kann man [Vollkornbrötchen](kiosk_menu) am Kiosk kaufen
+   - gibt es [Croissant](kiosk_menu) am Kiosk
+   - kann man [zum trinken](kiosk_menu) in der Cafeteria kaufen
+   - gibt es [zum essen](kiosk_menu) in der Cafeteria
+   - gibt es in der Cafeteria [Lift](kiosk_menu)
+   - kann man am Kiosk etwas zum [essen](kiosk_menu) kaufen
+   - kann man in der Cafeteria etwas zum [trinken](kiosk_menu) kaufen
+   - gibt es in der Cafeteria etwas zu [trinken](kiosk_menu)
+   - kann man in der Cafeteria etwas [zum trinken](kiosk_menu)
+   - kann man Kiosk etwas [essen](kiosk_menu)
+   - gibt es am Kiosk etwas zu [trinken](kiosk_menu)
+   - kann man am Kiosk [essen](kiosk_menu)
+   - gibt es am kiosk was zum [trinken](kiosk_menu)
+   - gibt es am Kiosk [Mio Mate](kiosk_menu)
+   - gibt es am Kiosk [vio Orange](kiosk_menu)
+   - gibt es am Kiosk [vio Mineralwasser](kiosk_menu)
+   - gibt es am Kiosk [vio Wasser](kiosk_menu)
+   - gibt es am Kiosk [zitronen Limonade](kiosk_menu)
+   - gibt es am Kiosk [schokotrunk](kiosk_menu)
+   - gibt es am Kiosk [müller Milch](kiosk_menu)
+   - gibt es am Kiosk [Red Bull](kiosk_menu)
+   - gibt es am Kiosk [vio Lemon](kiosk_menu)
+   - gibt es am Kiosk [Mio Gurrana](kiosk_menu)
+   - gibt es am Kiosk [Mio Lapacho](kiosk_menu)
+   - gibt es am Kiosk [Mezzo Mix](kiosk_menu)
+   - gibt es am Kiosk [H-Vollmilch](kiosk_menu)
+   - gibt es am Kiosk [Fructiv Multivitamin](kiosk_menu)
+   - gibt es am Kiosk [cola-Zero](kiosk_menu)
+   - gibt es am Kiosk [Coca Cola](kiosk_menu)
+   - gibt es am Kiosk [Club Mate](kiosk_menu)
+   - gibt es am Kiosk [cherry Coke](kiosk_menu)
+   - gibt es am Kiosk [Bellaris Mineralwasser](kiosk_menu)
+   - gibt es am Kiosk [Durstlöscher Eistee](kiosk_menu)
+   - gibt es am Kiosk [Wraps](kiosk_menu)
+   - gibt es am Kiosk [Berliner](kiosk_menu)
+   - gibt es am Kiosk [Brötchen](kiosk_menu)
+   - gibt es am Kiosk [Ciabattabröttchen](kiosk_menu)
+   - gibt es am Kiosk [Baguettes](kiosk_menu)
+   - gibt es am Kiosk [Gemüsestange](kiosk_menu)
+   - gibt es am Kiosk [Laugenstange](kiosk_menu)
+   - gibt es am Kiosk [mohnstange](kiosk_menu)
+   - gibt es am Kiosk [Laugenbrezel](kiosk_menu)
+   - gibt es am Kiosk [Laugencroissant](kiosk_menu)
+   - gibt es am Kiosk [Laugenknoten](kiosk_menu)
+   - gibt es am Kiosk [Vollkornbrötchen](kiosk_menu)
+   - gibt es am Kiosk [Seelenbrötchen](kiosk_menu)
+   - gibt es am Kiosk [Kaffee](kiosk_menu)
+   - gibt es am Kiosk [Cappuccino](kiosk_menu)
+   - gibt es am Kiosk [Tee](kiosk_menu)
+   - gibt es am Kiosk [Kaffee Crema](kiosk_menu)
+   - gibt es am Kiosk [Heiße Schokolade](kiosk_menu)
+   - gibt es am Kiosk [Latte Macchiato](kiosk_menu)
+   - gibt es am Kiosk [Espresso](kiosk_menu)
+   - gibt es am Kiosk [Milch Kaffee](kiosk_menu)
+   - gibt es am Kiosk [Airwaves Cherry Menthol](kiosk_menu)
+   - gibt es am Kiosk [Airwaves Menthol](kiosk_menu)
+   - gibt es am Kiosk [Apfeltasche](kiosk_menu)
+   - gibt es am Kiosk [Quarkplunder](kiosk_menu)
+   - gibt es am Kiosk [Blechkuchen](kiosk_menu)
+   - gibt es am Kiosk [Bounty](kiosk_menu)
+   - gibt es am Kiosk [Duplo](kiosk_menu)
+   - gibt es am Kiosk [Duplo Chocnut](kiosk_menu)
+   - gibt es am Kiosk [Hanuta zweier Pack](kiosk_menu)
+   - gibt es am Kiosk [Knoppers](kiosk_menu)
+   - gibt es am Kiosk [Kitkat](kiosk_menu)
+   - gibt es am Kiosk [Kinder Country](kiosk_menu)
+   - gibt es am Kiosk [Kinder Bueno](kiosk_menu)
+   - gibt es am Kiosk [Kinder Schokoriegel](kiosk_menu)
+   - gibt es am Kiosk [Kinder Maxi King](kiosk_menu)
+   - gibt es am Kiosk [Kinder Pingui](kiosk_menu)
+   - gibt es am Kiosk [Mars](kiosk_menu)
+   - gibt es am Kiosk [Mr. Tom Erdnussriegel](kiosk_menu)
+   - gibt es am Kiosk [Lion](kiosk_menu)
+   - gibt es am Kiosk [Snickers](kiosk_menu)
+   - gibt es am Kiosk [Twix](kiosk_menu)
+
+- lookup: kiosk_menu
+  examples: |
+    - vio Lemon
+    - vio Orange
+    - vio Mineralwasser
+    - vio Wasser
+    - zitronen Limonade
+    - schokotrunk
+    - müller Milch
+    - Red Bull
+    - Mio Mate
+    - Mio Gurrana
+    - Mio Lapacho
+    - Mezzo Mix
+    - Lift
+    - H-Vollmilch
+    - Fructiv Multivitamin
+    - cola-Zero
+    - Coca Cola
+    - Club Mate
+    - cherry Coke
+    - Bellaris Mineralwasser
+    - Durstlöscher Eistee
+    - zum trinken
+    - getränke
+    - trinken
+    - Wraps
+    - Baguettes
+    - Berliner
+    - Brötchen
+    - Ciabattabröttchen
+    - Croissant
+    - Gemüsestange
+    - Laugenstange
+    - mohnstange
+    - Laugenbrezel
+    - Laugencroissant
+    - Laugenknoten
+    - Vollkornbrötchen
+    - Seelenbrötchen
+    - essen
+    - zum essen
+    - Kaffee
+    - Cappuccino
+    - Tee
+    - Kaffee Crema
+    - Heiße Schokolade
+    - Latte Macchiato
+    - Espresso
+    - Milch Kaffee
+    - Airwaves Cherry Menthol
+    - Airwaves Menthol
+    - Apfeltasche
+    - Quarkplunder
+    - Blechkuchen
+    - Bounty
+    - Duplo
+    - Duplo Chocnut
+    - Hanuta zweier Pack
+    - Knoppers
+    - Kitkat
+    - Kinder Country
+    - Kinder Bueno
+    - Kinder Schokoriegel
+    - Kinder Maxi King
+    - Kinder Pingui
+    - Mars
+    - Mr. Tom Erdnussriegel
+    - Lion
+    - Snickers
+    - Twix
+
+- intent: opening_time
+  examples: |
+   - wann kann ich [in der Mensa](mensa_department) essen
+   - wann kann ich [am Kiosk](mensa_department) essen
+   
+- lookup: mensa_department
+  examples: |
+    - Kiosk
+    - Cafeteria
+    - Mensa
+    - in der Mensa
+    - am Kiosk
+    - in Mensa

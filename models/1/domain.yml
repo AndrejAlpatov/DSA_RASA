@@ -15,6 +15,8 @@ intents:
   - studierendenwerk_info
   - studierenden_werk_activity
   - invalid_question
+  - opening_time
+  - kiosk_menu_if
 
 responses:
   utter_greet:
@@ -74,6 +76,8 @@ responses:
   
 entities:
   - name
+  - mensa_department
+  - kiosk_menu
 
 slots:
   name:
@@ -81,6 +85,10 @@ slots:
     mappings:
     - type: from_entity
       entity: name
+
+actions:
+  - action_opening_time
+  - action_kiosk_menu_if
 
 session_config:
   session_expiration_time: 60
