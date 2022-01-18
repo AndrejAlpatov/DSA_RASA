@@ -462,8 +462,6 @@ nlu:
 
 - intent: opening_hours
   examples: |
-   - tutorial
-   - wie bediene ich diesen skill
    - ab wie viel uhr kann ich in der mensa essen
    - ab wie viel uhr kann ich in die mensa essen gehen
    - ab wie viel uhr kann man in die mensa essen gehen
@@ -481,3 +479,122 @@ nlu:
    - ab wie viel uhr kann ich mensa gehen
    - wann öffnet die mensa
 
+- intent: kiosk_menu_what
+  examples: |
+   - was bietet der kiosk an
+   - was bietet der kiosk alles an
+   - was kann ich alles am kiosk kaufen
+   - was gibt es alles am kiosk
+   - welche produkte gibt es am kiosk
+   - welche produkte gibt es am kiosk zu kaufen
+   - welche produkte gibt es am kiosk zum essen
+   - welche produkte gibt es am kiosk
+   - was kann man am kiosk kaufen
+   - was kann ich am kiosk kaufen
+   - was gibt es am kiosk
+   - was kann man am kiosk zum essen
+   - was kann ich am kiosk zum essen
+   - Was gibt es am Kiosk zum essen
+
+- intent: price_query
+  examples: |
+   - wie viel euro hat die mensa {timeindication_price} gekostet
+   - wie viel euro hat das essen gestern gekostet
+   - wie viel geld hat das essen gestern gekostet
+   - wie viel geld hat die mensa gestern gekostet
+   - wie viel hat die mensa gestern gekostet
+   - wie viel hat das essen gestern gekostet
+   - wie viel euro kostet die mensa für studenten
+   - wie viel geld kostet die mensa für gast
+   - was kostet die mensa für studenten
+   - wie viel kostet die mensa für gast
+   - wie viel euro muss ich jetzt für das essen bezahlen
+   - wie viel geld muss ich jetzt für das essen bezahlen
+   - wie viel euro muss man jetzt für das essen bezahlen
+   - wie viel geld muss man jetzt für das essen bezahlen
+   - wie viel euro muss ich jetzt in der mensa bezahlen
+   - wie viel geld muss ich jetzt in der mensa bezahlen
+   - wie viel euro muss man jetzt in der mensa bezahlen
+   - wie viel geld muss man in der mensa bezahlen
+   - wie viel muss man für das essen bezahlen
+   - wie viel muss man in der mensa bezahlen
+   - wie viel muss man für die mensa bezahlen
+   - wie viel muss ich in der mensa bezahlen
+   - wie viel musste man in der mensa bezahlen
+   - wie viel muss ich für die mensa bezahlen
+   - wie viel muss ich für das essen bezahlen
+   - wie viel kostete die mensa
+   - was kostete die mensa
+   - wie viel kostet die mensa
+   - was kostet die mensa jetzt
+   - was kostete das essen jetzt
+   - was kostet das essen heute
+   - wie viel kostete das essen jetzt
+   - wie viel euro kostet die mensa am Dienstag
+   - wie viel geld kostet die mensa am Donnerstag
+   - wie viel kostet die mensa am Mittwoch
+   - was kostet die mensa am Dienstag
+   - wie viel euro kostet das tagesgericht am Freitag
+   - wie viel euro kostet das gericht am Montag
+   - wie viel geld kostet das tagesgericht am Donnerstag
+   - wie viel geld kostet das gericht am Montag
+   - wie viel euro kostet das essen am Freitag
+   - wie viel geld kostet das essen am Mittwoch
+   - was kostet das essen am Mittwoch
+   - was kostet das gericht am Donnerstag
+   - was kostet das tagesgericht am Montag
+   - wie viel euro gast in der mensa bezahlen
+   - wie viel geld gast in der mensa bezahlen
+   - wie viel muss ein student in der mensa bezahlen
+   - was muss ein student in der mensa bezahlen
+   - wie viel euro muss ein student für das essen bezahlen
+   - wie viel geld muss ein gast für das essen bezahlen
+   - wie viel muss ein student für das essen bezahlen
+   - was muss ein gast für das essen bezahlen
+   - wie viel euro kostet das essen für gast
+   - wie viel geld kostet das essen für studenten
+   - was kostet das essen für studenten
+   - wie viel euro muss ich in zwei tagen in der mensa bezahlen
+   - wie viel geld muss ich in drei tagen in der mensa bezahlen
+   - wie viel muss ich in vier tagen in der mensa bezahlen
+   - wie viel muss man in zwei tagen in der mensa bezahlen
+   - wie viel musste man vor drei tagen in der mensa bezahlen
+   - wie viel euro kostete das essen vor zehn tagen
+   - wie viel geld kostete das essen vor sieben tagen
+   - wie viel euro kostet das essen in drei tagen
+   - wie viel geld kostet das essen in vier tagen
+   - was kostet das essen in zwo tagen
+   - wie viel kostete das essen vor secks tagen
+   - wie viel geld muss man für die mensa bezahlen
+   - wie viel geld muss ich für die mensa bezahlen
+   - wie viel euro muss man für die mensa bezahlen
+   - wie viel euro muss ich für die mensa bezahlen
+   - wie viel euro kostet die mensa
+   - wie viel geld kostet die mensa
+   - wie teuer ist es in der mensa
+   - was kostet die mensa
+   - wie viel kostet die mensa
+   - was muss man für das bezahlen
+   - was muss ich für das gericht bezahlen
+   - was muss man für das tagesgericht bezahlen
+   - was muss ich für das tagesgericht bezahlen
+   - was muss ich für das essen bezahlen
+   - was muss man für das essen bezahlen
+   - wie viel muss man für das essen bezahlen
+   - wie viel muss ich für das essen bezahlen
+   - wie viel geld kostet das gericht
+   - wie viel geld kostet das tagesgericht
+   - wie viel euro kostet das essen
+   - wie viel geld kostet das essen
+   - wie viel kostet das gericht
+   - wie viel kostet das tagesgericht
+   - was kostete es jetzt
+   - was kostet es morgen
+   - was kostet das essen
+   - was kostet das gericht
+   - was kostet das tagesgericht
+   - wie viel kostet das essen in zwei tagen
+   - wie viel kostet das essen am Montag
+   - wie viel kostet das essen für gast
+   - wie viel kostet das essen heute
+   - wie viel kostet das essen

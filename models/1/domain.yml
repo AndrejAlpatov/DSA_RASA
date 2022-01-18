@@ -19,6 +19,8 @@ intents:
   - kiosk_menu_if
   - help
   - opening_hours
+  - kiosk_menu_what
+  - price_query
 
 responses:
   utter_greet:
@@ -81,6 +83,12 @@ responses:
   
   utter_opening_hours:
   - text: "Die Mensa ist von Montag bis Freitag ab 11 Uhr 30 geöffnet."
+  
+  utter_kiosk_menu_what:
+  - text: "Menza hat eine große Auswahl an köstlichen Gerichten."
+  
+  utter_price_query:
+  - text: "Du kannst es dir leisten"
 
 entities:
   - name
