@@ -76,3 +76,8 @@ rules:
   steps:
   - intent: price_query
   - action: utter_price_query
+
+- rule: was kann ich heute an Ausgabe 2 essen
+  steps:
+  - intent: query_menu
+  - action: utter_query_menu

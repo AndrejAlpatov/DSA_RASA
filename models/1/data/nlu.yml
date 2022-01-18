@@ -598,3 +598,49 @@ nlu:
    - wie viel kostet das essen für gast
    - wie viel kostet das essen heute
    - wie viel kostet das essen
+
+- intent: query_menu
+  examples: |
+   - was kann ich essen am Montag
+   - was gibt es zu essen am Montag
+   - was gibt es zu essen am 20 Januar
+   - was kann ich essen am 30 Februar
+   - was kann ich essen jetzt
+   - was gibt es zum essen vorgestern
+   - was kann ich essen in einem tag
+   - was gibt es zum essen in einem tag
+   - was kann ich essen in zwei tagen
+   - was gibt es zum essen in drei tagen
+   - was gibt es in vier tagen in der Mensa zu essen
+   - was gibt es in fünf tag in der Mensa zu essen
+   - was gibt es in secks in der Mensa zu essen
+   - was gibt es in sieben tagen zu essen
+   - was gibt es in einem tag zu essen
+   - was gibt es in einer Woche zu essen
+   - was kann ich in einer Woche in der Mensa essen
+   - was kann ich  in einem tag in der Mensa essen
+   - was kann ich in zehn tagen in der Mensa essen
+   - was kann ich an ausgabe eins am 10 April essen
+   - was kann ich an ausgabe eins am Dienstag essen
+   - was gibt es an ausgabe eins am zweiten Mai zu essen
+   - was gibt es an ausgabe eins am Dienstag zu essen
+   - was gibt es an ausgabe eins gestern zu essen
+   - was kann ich an ausgabe zwei gestern essen
+   - was kann ich vorgestern essen
+   - was kann ich übermorgen an ausgabe zwei essen
+   - was kann ich am Mittwoch an ausgabe zwei essen
+   - was kann ich am dritten Juni an ausgabe zwei essen
+   - was kann ich am zehnten September essen
+   - was kann ich am Mittwoch essen
+   - was gibt es am zwanzichsten Oktober an ausgabe zwei zu essen
+   - was gibt es am elften November an ausgabe zwei zum essen
+   - was gibt es am vierzenten December zum essen
+   - was gibt es am viertem März zu essen
+   - was gibt es am Donnerstag an ausgabe zwei zu essen
+   - was gibt es am Donnerstag an ausgabe zwei zum essen
+   - was gibt es am Freitag zum essen
+   - was gibt es am Freitag zu essen
+   - was gibt es übermorgen an ausgabe zwei zu essen
+   - was gibt es morgen an ausgabe zwei zum essen
+   - was gibt es heute zum essen
+   - was gibt es heute zu essen

@@ -21,6 +21,7 @@ intents:
   - opening_hours
   - kiosk_menu_what
   - price_query
+  - query_menu
 
 responses:
   utter_greet:
@@ -89,6 +90,9 @@ responses:
   
   utter_price_query:
   - text: "Du kannst es dir leisten"
+  
+  utter_query_menu:
+  - text: "Du kannst essen, was heute zur Verfügung steht"
 
 entities:
   - name
