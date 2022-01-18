@@ -57,3 +57,12 @@ rules:
   - intent: kiosk_menu_if
   - action: action_kiosk_menu_if
   
+- rule: Can i get help
+  steps:
+  - intent: help
+  - action: utter_help
+
+- rule: What is the mensa opening hours
+  steps:
+  - intent: opening_hours
+  - action: utter_opening_hours

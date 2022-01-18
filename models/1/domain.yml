@@ -17,6 +17,8 @@ intents:
   - invalid_question
   - opening_time
   - kiosk_menu_if
+  - help
+  - opening_hours
 
 responses:
   utter_greet:
@@ -74,6 +76,12 @@ responses:
   - text: "Auf diese Frage weiß ich keine Antwort."
   - text: "Das weiß ich leider nicht."
   
+  utter_help:
+  - text: "Dieser Skill ist dafür da, um Informationen zur Mensa der Hochschule Worms zu erfragen. Er liefert dir Informationen zum Essen, zu den Öffnungszeiten und Preisen, zum integrierten Kiosk und zum Studierendenwerk der Vorderpfalz. Außerdem können personalisierte Unverträglichkeiten erfasst und auf diese hingewiesen werden, falls sie im Essen enthalten sind."
+  
+  utter_opening_hours:
+  - text: "Die Mensa ist von Montag bis Freitag ab 11 Uhr 30 geöffnet."
+
 entities:
   - name
   - mensa_department

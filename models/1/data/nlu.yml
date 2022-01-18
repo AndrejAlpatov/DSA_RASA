@@ -355,9 +355,9 @@ nlu:
    - gibt es am Kiosk [Kinder Pingui](kiosk_menu)
    - gibt es am Kiosk [Mars](kiosk_menu)
    - gibt es am Kiosk [Mr. Tom Erdnussriegel](kiosk_menu)
-   - gibt es am Kiosk [Lion](kiosk_menu)
    - gibt es am Kiosk [Snickers](kiosk_menu)
    - gibt es am Kiosk [Twix](kiosk_menu)
+#   - gibt es am Kiosk [Lion](kiosk_menu)
 
 - lookup: kiosk_menu
   examples: |
@@ -435,7 +435,7 @@ nlu:
   examples: |
    - wann kann ich [in der Mensa](mensa_department) essen
    - wann kann ich [am Kiosk](mensa_department) essen
-   
+
 - lookup: mensa_department
   examples: |
     - Kiosk
@@ -444,3 +444,40 @@ nlu:
     - in der Mensa
     - am Kiosk
     - in Mensa
+
+- intent: help
+  examples: |
+   - tutorial
+   - wie bediene ich diesen skill
+   - bedienungsanleitung
+   - wie kann ich das bedienen
+   - was kann ich alles sagen
+   - was soll ich machen
+   - was kann ich machen
+   - kannst du mir bitte helfen
+   - hilfe bitte
+   - kannst du mir helfen
+   - ich brauche Hilfe
+   - hilfe
+
+- intent: opening_hours
+  examples: |
+   - tutorial
+   - wie bediene ich diesen skill
+   - ab wie viel uhr kann ich in der mensa essen
+   - ab wie viel uhr kann ich in die mensa essen gehen
+   - ab wie viel uhr kann man in die mensa essen gehen
+   - ab wie viel uhr kann man in der mensa essen
+   - ab wann kann ich in die mensa essen gehen
+   - ab wann kann ich in der mensa essen
+   - ab wann kann man in die mensa essen gehen
+   - ab wann kann man in der mensa essen
+   - ab wann kann ich mensa
+   - ab wann kann ich mensa gehen
+   - ab wann kann man mensa
+   - ab wann kann man mensa gehen
+   - ab wie viel uhr kann ich in die mensa
+   - ab wie viel uhr kann ich mensa
+   - ab wie viel uhr kann ich mensa gehen
+   - wann öffnet die mensa
+
