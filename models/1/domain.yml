@@ -8,7 +8,6 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - what_is_mensa
   - own_cup_in_kiosk
   - operator_of_mensa
   - studierendenwerk_other_mensen
@@ -47,9 +46,6 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
-
-  utter_what_is_mensa:
-  - text: "Mensa ist der beste Ort zum Essen in Worms" 
 
   utter_own_cup_in_kiosk:
   - text: "JA, du kannst gerne deine eigene Tasse oder Becher mitbringen."

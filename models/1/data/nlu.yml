@@ -91,11 +91,6 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: what_is_mensa
-  examples: |
-   - Was ist mensa?
-   - Was ist für eine Mensa?
-
 - intent: own_cup_in_kiosk
   examples: |
    - Kann ich meinen eigenen Becher zum abfüllen am Kaffeeautomaten mitbringen
@@ -357,7 +352,7 @@ nlu:
    - gibt es am Kiosk [Mr. Tom Erdnussriegel](kiosk_menu)
    - gibt es am Kiosk [Snickers](kiosk_menu)
    - gibt es am Kiosk [Twix](kiosk_menu)
-#   - gibt es am Kiosk [Lion](kiosk_menu)
+   - gibt es am Kiosk [Lion](kiosk_menu)
 
 - lookup: kiosk_menu
   examples: |
@@ -435,15 +430,54 @@ nlu:
   examples: |
    - wann kann ich [in der Mensa](mensa_department) essen
    - wann kann ich [am Kiosk](mensa_department) essen
+   - wann kann ich [in Mensa](mensa_department) essen
+   - wann kann ich [in die Mensa](mensa_department) essen gehen
+   - wann kann man in [Cafeteria](mensa_department) essen
+   - wann kann man in die [Cafeteria](mensa_department) essen gehen
+   - wann kann man an [Kiosk](mensa_department) gehen
+   - wann kann man an [Kiosk](mensa_department)
+   - wann kann ich [an Kiosk](mensa_department) gehen
+   - wann kann ich an [Cafeteria](mensa_department)
+   - wann kann man in die [Cafeteria](mensa_department) gehen
+   - wann kann man in die [Cafeteria](mensa_department)
+   - wann kann ich in [die Mensa](mensa_department) gehen
+   - wann kann ich in die [Cafeteria](mensa_department)
+   - wann kann man [in die Mensa](mensa_department)
+   - wann kann ich [in Mensa](mensa_department)
+   - wann kann man [in die Mensa](mensa_department) gehen
+   - wann kann ich [in Mensa](mensa_department) gehen
+   - um wie viel uhr kann man in die [Cafeteria](mensa_department) gehen
+   - um viel uhr kann man an [Kiosk](mensa_department) gehen
+   - um wie viel uhr kann man in die [Mensa](mensa_department)
+   - um wie viel uhr kann man [in die Cafeteria](mensa_department) gehen
+   - um wie viel uhr kann ich in die [Mensa](mensa_department) gehen
+   - um viel uhr kann ich an [Kiosk](mensa_department) gehen
+   - um wie viel uhr kann ich in die [Mensa](mensa_department)
+   - um wie viel uhr kann ich [in die Cafeteria](mensa_department) gehen
+   - von wann bis wann kann ich in die [Mensa](mensa_department) gehen
+   - von wann bis wann kann ich in der [Mensa](mensa_department) essen
+   - von wann bis wann kann man in der [Cafeteria](mensa_department) essen
+   - von wann bis wann kann man in die [Mensa](mensa_department) gehen
+   - wie lange kann man [in die Mensa](mensa_department) gehen
+   - wie lange ist der [Kiosk](mensa_department) geöffnet
+   - wie lange ist die [Cafeteria](mensa_department) geöffnet
+   - öffnungszeiten des [Kiosks](mensa_department)
+   - wann ist der  [Kiosk](mensa_department) geöffnet
+   - öffnungszeiten der [Mensa](mensa_department)
+   - wann ist die  [Cafeteria](mensa_department) geöffnet
+   - wann wird der [Kiosk](mensa_department) angeboten
 
 - lookup: mensa_department
   examples: |
     - Kiosk
+    - Kiosks
     - Cafeteria
+    - in die Cafeteria
     - Mensa
     - in der Mensa
     - am Kiosk
     - in Mensa
+    - in die Mensa
 
 - intent: help
   examples: |

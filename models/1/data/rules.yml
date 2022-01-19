@@ -12,11 +12,6 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Say 'Mensa ist toll' anytime the user says 'was ist die Mensa'
-  steps:
-  - intent: what_is_mensa
-  - action: utter_what_is_mensa
-
 - rule: Say Kann ich eigene tasse benutzen
   steps:
   - intent: own_cup_in_kiosk
