@@ -28,28 +28,28 @@ language: en
 #   - name: FallbackClassifier
 #     threshold: 0.3
 #     ambiguity_threshold: 0.1
-pipeline:
-  - name: WhitespaceTokenizer
-  - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
-  - name: CountVectorsFeaturizer
-    analyzer: char_wb
-    min_ngram: 1
-    max_ngram: 4
-  - name: DIETClassifier
-    entity_recognition: False
-    epochs: 100
-  - name: RegexEntityExtractor
-    use_lookup_tables: True
+#pipeline:
+#  - name: WhitespaceTokenizer
+#  - name: LexicalSyntacticFeaturizer
+#  - name: CountVectorsFeaturizer
+#  - name: CountVectorsFeaturizer
+#    analyzer: char_wb
+#    min_ngram: 1
+#    max_ngram: 4
+#  - name: DIETClassifier
+#    entity_recognition: False
+#    epochs: 100
+#  - name: RegexEntityExtractor
+#    use_lookup_tables: True
 
-# pipeline:
-# - name: "MitieNLP"
-#   model: "data/mitie/total_word_feature_extractor.dat"
-# - name: "MitieTokenizer"
-# - name: "MitieEntityExtractor"
-# - name: "EntitySynonymMapper"
-# - name: "RegexFeaturizer"
-# - name: "MitieIntentClassifier"
+pipeline:
+ - name: "MitieNLP"
+   model: "data/mitie/total_word_feature_extractor.dat"
+ - name: "MitieTokenizer"
+ - name: "MitieEntityExtractor"
+ - name: "EntitySynonymMapper"
+ - name: "RegexFeaturizer"
+ - name: "MitieIntentClassifier"
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/

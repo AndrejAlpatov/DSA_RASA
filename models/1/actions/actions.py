@@ -1,31 +1,3 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
-
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -37,6 +9,7 @@ from .list_values_to_low_case import list_value_to_low_case
 
 class ActionOpeningTimes(Action):
 
+    # return action object
     def name(self) -> Text:
         return "action_opening_time"
 
@@ -44,25 +17,30 @@ class ActionOpeningTimes(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        # get entity value from input
         mensa_department = next(tracker.get_latest_entity_values('mensa_department'), None)
 
+        # If entity value is not defined
         if not mensa_department:
             msg = "Sie können auch eine bestimmte Abteilung angeben"
             dispatcher.utter_message(text=msg)
             return []
 
+        # convert all characters to lowercase
         mensa_department_in_low_case = mensa_department.lower()
 
+        # if entity value is not in DB
         if mensa_department_in_low_case not in mensa_department_db:
             msg = f"In der Mensa gibt es {mensa_department} nicht, oder vielleicht stimmt der Name nicht"
             dispatcher.utter_message(text=msg)
             return []
 
+        # if entity value = "mensa"
         if mensa_department_in_low_case in mensa_names:
             msg = "Die Mensa hat von 11 Uhr 30 bis 14 Uhr geöffnet."
             dispatcher.utter_message(text=msg)
             return []
-        else:
+        else:  # if entity value = "kiosk"
             msg = "Von Montag bis Donnerstag ist der Kiosk von 8 bis 15 Uhr und freitags bis 14 Uhr geöffnet."
             dispatcher.utter_message(text=msg)
             return []
@@ -70,6 +48,7 @@ class ActionOpeningTimes(Action):
 
 class ActionKioskMenuIf(Action):
 
+    # return action object
     def name(self) -> Text:
         return "action_kiosk_menu_if"
 
@@ -77,6 +56,7 @@ class ActionKioskMenuIf(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        # get entity value from input
         kiosk_menu = next(tracker.get_latest_entity_values('kiosk_menu'), None)
 
         # Get DB collections
@@ -109,7 +89,7 @@ class ActionKioskMenuIf(Action):
         drink_words = list_value_to_low_case(goods['DRINK_WORD'])
         food_words = list_value_to_low_case(goods['FOOD_WORD'])
 
-        # if slot value wasn't passed
+        # # If entity (slot) value is not defined
         if not kiosk_menu:
             msg = "Sie können einen bestimmten Produktnamen angeben "
             dispatcher.utter_message(text=msg)
