@@ -12,11 +12,6 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Say 'Mensa ist toll' anytime the user says 'was ist die Mensa'
-  steps:
-  - intent: what_is_mensa
-  - action: utter_what_is_mensa
-
 - rule: Say Kann ich eigene tasse benutzen
   steps:
   - intent: own_cup_in_kiosk
@@ -57,3 +52,27 @@ rules:
   - intent: kiosk_menu_if
   - action: action_kiosk_menu_if
   
+- rule: Can i get help
+  steps:
+  - intent: help
+  - action: utter_help
+
+- rule: What is the mensa opening hours
+  steps:
+  - intent: opening_hours
+  - action: utter_opening_hours
+
+- rule: What kann I eat in Mensa
+  steps:
+  - intent: kiosk_menu_what
+  - action: utter_kiosk_menu_what
+
+- rule: How much
+  steps:
+  - intent: price_query
+  - action: utter_price_query
+
+- rule: was kann ich heute an Ausgabe 2 essen
+  steps:
+  - intent: query_menu
+  - action: utter_query_menu

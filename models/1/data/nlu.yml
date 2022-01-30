@@ -91,273 +91,76 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: what_is_mensa
-  examples: |
-   - Was ist mensa?
-   - Was ist für eine Mensa?
-
 - intent: own_cup_in_kiosk
   examples: |
-   - Kann ich meinen eigenen Becher zum abfüllen am Kaffeeautomaten mitbringen
-   - Darf ich am Kaffeeautomaten meinen eigenen Becher befüllen
-   - Kann ich am Kaffeeautomaten meinen eigenen Becher befüllen
    - Kann man am Kaffeeautomaten seinen eigenen Becher befüllen
-   - Kann ich meinen eigenen Becher zum abfüllen von Kaffee oder Tee mitbringen
-   - Kann ich meinen eigenen Becher zum abfüllen von Kaffee mitbringen
-   - Kann ich meinen eigenen Becher zum abfüllen von Tee mitbringen
-   - Kann ich meinen eigenen Becher zum abfüllen mitbringen
-   - Kann ich meinen eigenen Tasse mitbringen
-   - Kann ich meinen eigenen Tasse zum abfüllen mitbringen
-   - Kann ich meinen eigenen Tasse zum abfüllen von Kaffee mitbringen
-   - Kann ich seinen eigenen Tasse zum abfüllen von Kaffee oder Tee mitbringen
-   - Kann man seinen eigenen Tasse zum abfüllen von Kaffee oder Tee mitbringen
-   - Kann man seinen eigenen Tasse zum abfüllen von Kaffee mitbringen
-   - Kann man seinen eigenen Tasse zum abfüllen mitbringen
-   - Kann man seinen eigenen Tasse mitbringen
    - Kann man seinen eigenen Becher zum abfüllen mitbringen
-   - Kann man seinen eigenen Becher zum abfüllen von Tee mitbringen
-   - Kann man seinen eigenen Becher zum abfüllen von Kaffee mitbringen
-   - Kann man seinen eigenen Becher zum abfüllen von Kaffee oder Tee mitbringen
-   - darf man seinen eigenen becher benutzen
-   - muss man eigenen becher mitbringen
-   - kann man seinen eigenen becher mitbringen
 
 - intent: operator_of_mensa
   examples: |
-   - Zu wem gehört die Mensa
    - Ist die Mensa Teil eines anderen Unternehmen
-   - zu welcher organisation gehört die mensa
    - Ist die Mensa ein selbstständig
    - welche organisation steckt hinter der Mensa
-   - durch wen wird die mensa organisiert
-   - wer organisiert die mensa
-   - durch wen wird die mensa finanziert
    - wer finanziert die mensa
    - gehört die mensa irgendwem
    - wer trägt die verantwortung über die mensa
    - wer betreibt die mensa
    - durch wen wird die mensa geleitet
-   - wer leitet die mensa
-   - durch wen wird die mensa betrieben
-   - wem gehört die mensa
-   - wer ist der betreiber der mensa
    - wer ist für die mensa verantwortlich
    - wer kümmert sich um die mensa
 
 - intent: studierendenwerk_other_mensen
   examples: |
-   - hat das studierendenwerk noch weitere mensen
    - hat das studierendenwerk vorderpfalz noch weitere mensen
-   - weitere mensen
-   - gibt es noch mehr mensen
-   - gibt es weitere standorte vom studierendenwerk
-   - gibt es weitere standorte vom studierendenwerk vorderpfalz
-   - wo ist das studierendenwerk vorderpfalz noch tätig
    - wo ist das studierendenwerk noch tätig
-   - wo ist der betreuer der mensa noch tätig
-   - wie viele standorte hat das studierendenwerk
-   - wie viele standorte hat das studierendenwerk vorderpfalz
-   - wie viele mensen gibt es
-   - gibt es weitere mensen
    - was gehört dem studierendenwerk vorderpfalz noch
-   - was gehört dem studierendenwerk noch
-   - was leitet das studierendenwerk vorderpfalz noch
    - was leitet das studierendenwerk noch
    - hat das studierendenwerk vorderpfalz weitere mensen
    - hat das studierendenwerk weitere mensen
-   - mensen studierendenwerk
-   - mensen studierendenwerk vorderpfalz
-   - standorte studierendenwerk vorderpfalz
-   - standorte studierendenwerk
+   - gibt es weitere mensen
    - hat das studierendenwerk vorderpfalz weitere standorte
-   - hat das studierendenwerk weitere standorte
    - an welchen hochschulen ist das studierendenwerk vorderpfalz aktiv
-   - an welchen hochschulen ist das studierendenwerk aktiv
-   - welche mensen gehören dem studierendenwerk vorderpfalz noch
-   - welche mensen gehören dem studierendenwerk noch
-   - an welchen hochschulen ist das studierendenwerk vorderpfalz noch aktiv
-   - an welchen standorten hat das studierendenwerk weitere mensen
-   - an welchen standorten hat das studierendenwerk vorderpfalz weitere mensen
-   - an welchen standorten hat das studierendenwerk vorderpfalz mensen
-   - an welchen standorten hat das studierendenwerk mensen
-   - an welchen hochschulen ist das studierendenwerk noch aktiv
    - betreut das studierendenwerk vorderpfalz noch weitere mensen
 
 - intent: studierendenwerk_info
   examples: |
-   - sage mir etwas zum betreiber der mensa
-   - kannst du mir etwas zum betreiber der mensa sagen
-   - was weißt du über den betreiber der mensa
-   - informationen über den betreiber
    - was weißt du über den betreiber
-   - sage mir etwas zum betreiber
-   - kannst du mir etwas zum betreiber sagen
-   - Gibt es informationen zum studierenden werk der vorderpfalz
-   - Gibt es weitere informationen zum studierenden werk
    - Gibt es informationen zum studierenden werk
-   - Was macht das studierenden Werk noch
-   - Ich möchte gerne mehr über den Betreiber der Mensa wissen
-   - Sag mir etwas über den Betreiber Mensa
-   - sage mir etwas zum studierendenwerk vorderpfalz
-   - sage mir etwas zum studierendenwerk
-   - sage mir etwas zum betreuer der mensa
-   - sage mir etwas zum betreuer
-   - informationen über das studierendenwerk vorderpfalz
-   - informationen über das studierendenwerk
-   - informationen über den betreuer
-   - kannst du mir etwas zum studierendenwerk vorderpfalz sagen
-   - kannst du mir etwas zum studierendenwerk sagen
-   - kannst du mir etwas zum betreuer sagen
    - kannst du mir etwas zum betreuer der mensa sagen
-   - informationen zum betreuer der mensa
-   - studierendenwerk vorderpfalz
-   - studierendenwerk
-   - sage mir etwas über das studierendenwerk vorderpfalz
-   - sage mir etwas über das studierendenwerk
    - sage mir etwas über den betreuer der mensa
-   - sage mir etwas über den betreuer
    - was weißt du über das studierendenwerk vorderpfalz
-   - was weißt du über das studierendenwerk
-   - was weißt du über den betreuer
-   - was weißt du über den betreuer der mensa
-   - informationen zum betreuer
    - informationen zum studierendenwerk
-   - informationen zum studierendenwerk vorderpfalz
 
 - intent: studierenden_werk_activity
   examples: |
    - aktivitäten und themen des studierendenwerkes der vorderpfalz
-   - aktivitäten und themen des studierendenwerkes
-   - aktivitäten und themen des betreuers der mensa
-   - aktivitäten und themen des betreuers
-   - themen und aktivitäten des studierendenwerkes der vorderpfalz
-   - themen und aktivitäten des studierendenwerkes
    - themen und aktivitäten des betreuers der mensa
-   - themen und aktivitäten des betreuers
-   - was sind wie themen des studierendenwerkes der vorderpfalz
-   - was sind wie themen des studierendenwerkes vorderpfalz
    - was sind wie themen des studierendenwerkes
-   - was sind wie themen des betreuers der mensa
-   - was sind wie themen des betreuers
-   - was sind wie aktivitäten des studierendenwerkes der vorderpfalz
-   - was sind wie aktivitäten des studierendenwerkes vorderpfalz
-   - was sind wie aktivitäten des studierendenwerkes
-   - was sind wie aktivitäten des betreuers der mensa
    - was sind wie aktivitäten des betreuers
-   - mit was beschäftigt sich das studierendenwerk
-   - mit was beschäftigt sich das studierendenwerk vorderpfalz
-   - mit was beschäftigt sich das studierendenwerk noch
-   - mit was beschäftigt sich das studierendenwerk vorderpfalz noch
-   - mit was beschäftigt sich der betreuer
    - mit was beschäftigt sich der betreuer noch
-   - welche beschäftigungen hat das studierendenwerk noch
-   - welche beschäftigungen hat das studierendenwerk
-   - welche beschäftigungen hat das studierendenwerk vorderpfalz noch
-   - welche beschäftigungen hat das studierendenwerk vorderpfalz
    - welche beschäftigungen hat der betreiber der mensa
-   - welche beschäftigungen hat der betreiber der mensa noch
-   - welche beschäftigungen hat der betreiber
-   - welche beschäftigungen hat der betreiber noch
-   - was macht das studierendenwerk vorderpfalz
-   - was macht das studierendenwerk
    - was macht der der betreiber der mensa
-   - was macht der betreiber
-   - welche dienstleistungen bietet das studierendenwerk vorderpfalz noch an
-   - welche dienstleistungen bietet das studierendenwerk noch an
-   - welche dienstleistungen bietet der betreiber der mensa noch an
    - was mach der betreiber noch
-   - was macht der betreiber der mensa noch
    - was macht das studierendenwerk vorderpfalz noch
-   - was macht das studierendenwerk noch
 
 - intent: invalid_question
   examples: |
    - kann ich mir essen nach hause bestellen
    - kann man sich das essen liefern lassen
    - ich würde gerne einen tisch reservieren
-   - kann ich in der mensa einen tisch reservieren
-   - kann ich das rezept haben
-   - wo gibt es das rezept für das essen
    - wo gibt es das rezept
-   - kann ich das rezept von dem essen haben
 
 - intent: kiosk_menu_if
   examples: |
    - kann man [Vollkornbrötchen](kiosk_menu) am Kiosk kaufen
-   - gibt es [Croissant](kiosk_menu) am Kiosk
    - kann man [zum trinken](kiosk_menu) in der Cafeteria kaufen
    - gibt es [zum essen](kiosk_menu) in der Cafeteria
    - gibt es in der Cafeteria [Lift](kiosk_menu)
    - kann man am Kiosk etwas zum [essen](kiosk_menu) kaufen
    - kann man in der Cafeteria etwas zum [trinken](kiosk_menu) kaufen
-   - gibt es in der Cafeteria etwas zu [trinken](kiosk_menu)
-   - kann man in der Cafeteria etwas [zum trinken](kiosk_menu)
    - kann man Kiosk etwas [essen](kiosk_menu)
    - gibt es am Kiosk etwas zu [trinken](kiosk_menu)
-   - kann man am Kiosk [essen](kiosk_menu)
-   - gibt es am kiosk was zum [trinken](kiosk_menu)
-   - gibt es am Kiosk [Mio Mate](kiosk_menu)
-   - gibt es am Kiosk [vio Orange](kiosk_menu)
-   - gibt es am Kiosk [vio Mineralwasser](kiosk_menu)
-   - gibt es am Kiosk [vio Wasser](kiosk_menu)
-   - gibt es am Kiosk [zitronen Limonade](kiosk_menu)
-   - gibt es am Kiosk [schokotrunk](kiosk_menu)
-   - gibt es am Kiosk [müller Milch](kiosk_menu)
    - gibt es am Kiosk [Red Bull](kiosk_menu)
-   - gibt es am Kiosk [vio Lemon](kiosk_menu)
-   - gibt es am Kiosk [Mio Gurrana](kiosk_menu)
-   - gibt es am Kiosk [Mio Lapacho](kiosk_menu)
-   - gibt es am Kiosk [Mezzo Mix](kiosk_menu)
-   - gibt es am Kiosk [H-Vollmilch](kiosk_menu)
-   - gibt es am Kiosk [Fructiv Multivitamin](kiosk_menu)
-   - gibt es am Kiosk [cola-Zero](kiosk_menu)
-   - gibt es am Kiosk [Coca Cola](kiosk_menu)
-   - gibt es am Kiosk [Club Mate](kiosk_menu)
-   - gibt es am Kiosk [cherry Coke](kiosk_menu)
-   - gibt es am Kiosk [Bellaris Mineralwasser](kiosk_menu)
-   - gibt es am Kiosk [Durstlöscher Eistee](kiosk_menu)
-   - gibt es am Kiosk [Wraps](kiosk_menu)
-   - gibt es am Kiosk [Berliner](kiosk_menu)
-   - gibt es am Kiosk [Brötchen](kiosk_menu)
-   - gibt es am Kiosk [Ciabattabröttchen](kiosk_menu)
-   - gibt es am Kiosk [Baguettes](kiosk_menu)
-   - gibt es am Kiosk [Gemüsestange](kiosk_menu)
-   - gibt es am Kiosk [Laugenstange](kiosk_menu)
-   - gibt es am Kiosk [mohnstange](kiosk_menu)
-   - gibt es am Kiosk [Laugenbrezel](kiosk_menu)
-   - gibt es am Kiosk [Laugencroissant](kiosk_menu)
-   - gibt es am Kiosk [Laugenknoten](kiosk_menu)
-   - gibt es am Kiosk [Vollkornbrötchen](kiosk_menu)
-   - gibt es am Kiosk [Seelenbrötchen](kiosk_menu)
-   - gibt es am Kiosk [Kaffee](kiosk_menu)
-   - gibt es am Kiosk [Cappuccino](kiosk_menu)
-   - gibt es am Kiosk [Tee](kiosk_menu)
-   - gibt es am Kiosk [Kaffee Crema](kiosk_menu)
-   - gibt es am Kiosk [Heiße Schokolade](kiosk_menu)
-   - gibt es am Kiosk [Latte Macchiato](kiosk_menu)
-   - gibt es am Kiosk [Espresso](kiosk_menu)
-   - gibt es am Kiosk [Milch Kaffee](kiosk_menu)
-   - gibt es am Kiosk [Airwaves Cherry Menthol](kiosk_menu)
-   - gibt es am Kiosk [Airwaves Menthol](kiosk_menu)
-   - gibt es am Kiosk [Apfeltasche](kiosk_menu)
-   - gibt es am Kiosk [Quarkplunder](kiosk_menu)
-   - gibt es am Kiosk [Blechkuchen](kiosk_menu)
-   - gibt es am Kiosk [Bounty](kiosk_menu)
-   - gibt es am Kiosk [Duplo](kiosk_menu)
-   - gibt es am Kiosk [Duplo Chocnut](kiosk_menu)
-   - gibt es am Kiosk [Hanuta zweier Pack](kiosk_menu)
-   - gibt es am Kiosk [Knoppers](kiosk_menu)
-   - gibt es am Kiosk [Kitkat](kiosk_menu)
-   - gibt es am Kiosk [Kinder Country](kiosk_menu)
-   - gibt es am Kiosk [Kinder Bueno](kiosk_menu)
-   - gibt es am Kiosk [Kinder Schokoriegel](kiosk_menu)
-   - gibt es am Kiosk [Kinder Maxi King](kiosk_menu)
-   - gibt es am Kiosk [Kinder Pingui](kiosk_menu)
-   - gibt es am Kiosk [Mars](kiosk_menu)
-   - gibt es am Kiosk [Mr. Tom Erdnussriegel](kiosk_menu)
-   - gibt es am Kiosk [Lion](kiosk_menu)
-   - gibt es am Kiosk [Snickers](kiosk_menu)
-   - gibt es am Kiosk [Twix](kiosk_menu)
 
 - lookup: kiosk_menu
   examples: |
@@ -433,14 +236,97 @@ nlu:
 
 - intent: opening_time
   examples: |
-   - wann kann ich [in der Mensa](mensa_department) essen
-   - wann kann ich [am Kiosk](mensa_department) essen
-   
+   - wann kann man an [Kiosk](mensa_department)
+   - wann kann man in die [Cafeteria](mensa_department)
+   - wann kann ich in [Mensa](mensa_department) gehen
+   - um wie viel uhr kann man in die [Cafeteria](mensa_department) gehen
+   - um wie viel uhr kann ich in die [Mensa](mensa_department) gehen
+   - um viel uhr kann ich an [Kiosk](mensa_department) gehen
+   - von wann bis wann kann man in der [Cafeteria](mensa_department) essen
+   - von wann bis wann kann man in die [Mensa](mensa_department) gehen
+   - wie lange kann man [in die Mensa](mensa_department) gehen
+   - wie lange ist der [Kiosk](mensa_department) geöffnet
+   - wie lange ist die [Cafeteria](mensa_department) geöffnet
+   - öffnungszeiten der [Mensa](mensa_department)
+   - wann ist die  [Cafeteria](mensa_department) geöffnet
+   - wann wird der [Kiosk](mensa_department) angeboten
+
 - lookup: mensa_department
   examples: |
     - Kiosk
+    - Kiosks
     - Cafeteria
+    - in die Cafeteria
     - Mensa
     - in der Mensa
     - am Kiosk
     - in Mensa
+    - in die Mensa
+
+- intent: help
+  examples: |
+   - tutorial
+   - wie bediene ich diesen skill
+   - bedienungsanleitung
+   - was kann ich alles sagen
+   - was soll ich machen
+   - kannst du mir bitte helfen
+   - ich brauche Hilfe
+   - hilfe
+
+- intent: opening_hours
+  examples: |
+   - ab wie viel uhr kann ich in die mensa essen gehen
+   - ab wann kann man in die mensa essen gehen
+   - ab wann kann ich mensa
+   - ab wie viel uhr kann ich mensa gehen
+   - wann öffnet die mensa
+
+- intent: kiosk_menu_what
+  examples: |
+   - was bietet der kiosk alles an
+   - was kann ich alles am kiosk kaufen
+   - was gibt es alles am kiosk
+   - welche produkte gibt es am kiosk zu kaufen
+   - was kann ich am kiosk kaufen
+   - was kann man am kiosk zum essen
+   - Was gibt es am Kiosk zum essen
+
+- intent: price_query
+  examples: |
+   - wie viel euro hat die mensa {timeindication_price} gekostet
+   - wie viel geld hat das essen gestern gekostet
+   - wie viel geld kostet die mensa für gast
+   - was kostet die mensa für studenten
+   - wie viel euro muss ich jetzt für das essen bezahlen
+   - wie viel musste man in der mensa bezahlen
+   - wie viel muss ich für das essen bezahlen
+   - wie viel kostet die mensa
+   - was kostete das essen jetzt
+   - wie viel kostete das essen jetzt
+   - wie viel geld kostet die mensa am Donnerstag
+   - wie viel euro kostet das tagesgericht am Freitag
+   - was kostet das gericht am Donnerstag
+   - wie viel muss ein student in der mensa bezahlen
+   - was kostet das essen für studenten
+   - wie viel euro kostet die mensa
+   - wie viel geld kostet die mensa
+   - wie teuer ist es in der mensa
+   - was muss man für das bezahlen
+   - was muss ich für das gericht bezahlen
+
+- intent: query_menu
+  examples: |
+   - was kann ich essen am Montag
+   - was gibt es zu essen am Montag
+   - was gab es zum essen vorgestern
+   - was gibt es in vier tagen in der Mensa zu esse
+   - was gibt es in einer Woche zu essen
+   - was gibt es an ausgabe eins am zweiten Mai zu essen
+   - was konnte ich vorgestern essen
+   - was kann ich am Mittwoch an ausgabe zwei essen
+   - was gibt es am zwanzichsten Oktober an ausgabe zwei zu essen
+   - was gibt es am Donnerstag an ausgabe zwei zu essen
+   - was gibt es am Donnerstag an ausgabe zwei zum essen
+   - was gibt es heute zu essen
+   - was kann ich essen in einem tag
