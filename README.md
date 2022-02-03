@@ -41,6 +41,10 @@ Hier sind alles Intents mit den zugehörigen Utterances enthalten.
 #### rules:
 Legt den Kontroll- und Datenfluss des Gesprächs fest.
 
+### Zugriff auf die Datenbank:
+Um auf die Datenbank zugreifen zu können, um im Ordner `data_bank_functions` eine Datei `file_for_internal_usage.py` angelegt werden, 
+die einen `MongoDB-Client` erstellt.
+
 ### Dokumention:
 Die Dokumentation besteht aus *zwei* Teilen:
 #### 1. Externe Dokumentation:
