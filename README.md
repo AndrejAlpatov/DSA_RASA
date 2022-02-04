@@ -6,6 +6,25 @@ Mit `Rasa` können wir einen Chatbot erstellen, um ein *Experiment* für unser S
 Das *Experiment* besteht zum Einen aus der Übertragung von Intents und Utterances von der `Amazon Developer Console` 
 in `Rasa` und zum Anderen aus dem Vergleich zwischen verschiedenen `Rasa Pipelines` und `Alexa` bezüglich der *Erkennungsgenauigkeit* von Benutzereingaben.
 
+##### Im Python Backend umgesetzte Intents
+- OpeningTimeIntent
+- KioskMenuIfIntent
+
+##### Mittels yml-Dateien umgesetzte Intents
+- OwnCupInKioskIntent
+- OperatorOfMensaIntent
+- StudierendenwerkOtherMensenIntent
+- StudierendenwerkInfoIntent
+- StudierendenwerkActivityIntent
+- UnvalidQuestionsIntent
+
+##### Fiktiv Umgesetzte Intents
+- OpeningHoursIntent
+- KioskMenuWhatIntent
+- PriceQueryIntent
+- QueryMenuIntent
+- HelpIntent
+
 ## Funktionalität
 Der Chatbot verfügt, im Vergleich zum `Mensa Skill`, über *eingeschränktere* Funktionalität. Die Standard-Intents wurden auf die deutsche Sprache umgeändert.
 #### Beispielfragen des Chatbots:
@@ -18,12 +37,6 @@ Der Chatbot verfügt, im Vergleich zum `Mensa Skill`, über *eingeschränktere* 
 - Was sind die Themen des Studierendenwerks Vorderpfalz?
 - Betreibt das Studierendenwerk der Vorderpfalz noch weitere Mensen?
 - Kannst du mir etwas zum Betreiber der Mensa sagen?
-#### Die folgenden Intents wurden mit *fiktiven* Antworten Implementiert:
-- OpeningHoursIntent
-- KioskMenuWhatIntent
-- PriceQueryIntent
-- QueryMenuIntent
-- HelpIntent
 
 ## Projektstruktur
 ### models:
