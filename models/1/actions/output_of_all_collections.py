@@ -1,8 +1,22 @@
+"""
+This module comprise functions to operate with MongoDB
+"""
+
+
 from .file_for_internal_usage import client_mongoDB
 
 
 # Get date bank access and then collections from DB
 def data_bank_access(collections_names_in):
+    """
+    A function to return any collections from MongoDB
+
+    Args:
+        collections_names_in(list): A list with collection names as strings
+
+    Returns:
+        Collections from MongoDB, which names were passed as a parameter
+    """
 
     # get Database
     client = client_mongoDB

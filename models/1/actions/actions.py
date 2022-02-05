@@ -1,3 +1,8 @@
+"""
+Module comprise implementation of two RASA-Intents:
+Opening_time and Kiosk_menu_if
+"""
+
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -8,14 +13,33 @@ from .list_values_to_low_case import list_value_to_low_case
 
 
 class ActionOpeningTimes(Action):
+    """
+    Class for action "Opening times" that say user when Caffe or Mensa i open
+    """
 
     # return action object
     def name(self) -> Text:
+        """
+        Returns action object to rasa chat boot
+        Returns:
+            Returns action object
+        """
         return "action_opening_time"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        """
+        Answer to the user about opening time of cafe or mensa
+
+        Args:
+            dispatcher:
+            tracker:
+            domain:
+
+        Returns:
+            answer text to the user question e.g. Wann kann ich in der Mensa essen?
+        """
 
         # get entity value from input
         mensa_department = next(tracker.get_latest_entity_values('mensa_department'), None)
@@ -47,14 +71,32 @@ class ActionOpeningTimes(Action):
 
 
 class ActionKioskMenuIf(Action):
+    """
+    Class for action kiosk_menu_if that returns user information about presents of goods in Kiosk
+    """
 
-    # return action object
+    #
     def name(self) -> Text:
+        """
+        Returns action object to rasa chat boot
+        Returns:
+            Returns action object
+        """
         return "action_kiosk_menu_if"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        """
+        Returns answer to user question
+        Args:
+            dispatcher:
+            tracker:
+            domain:
+
+        Returns:
+            Answers to the question about presents of the goods in Caffe. e.g. Gibt es Coca-Cola am Kiosk?
+        """
 
         # get entity value from input
         kiosk_menu = next(tracker.get_latest_entity_values('kiosk_menu'), None)
