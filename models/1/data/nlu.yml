@@ -4,92 +4,88 @@ nlu:
 - intent: greet
   examples: |
     - hey
-    - hello, my name is [Anna](name)
-    - hello, my name is [Marco](name)
+    - Hallo, mein Name ist [Anna](name)
+    - Hallo, mein Name ist [Marco](name)
     - hi
-    - hello there
-    - good morning
-    - good evening
+    - hallo
+    - guten Morgen
+    - guten Abend
     - moin
-    - hey there
-    - let's go
+    - moin moin
+    - aufgehts
     - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - guten Nachmittag
+    - guten Tag
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
+    - Bis dann
+    - Bis bald
+    - auf Wiedersehen
+    - Man sieht sich
+    - Bis zum nächsten mal
     - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - ja
+    - okay
+    - aufjedenfall
+    - sicher
+    - das hört sich gut an
+    - sehr gut
 
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - nein
+    - niemals
+    - Ich denke nicht
+    - Ich mag das nicht
+    - ne
+    - nicht wirklich
+    - auf keinen Fall
+    - auf garkeinen Fall
+    - das geht garnicht
+    - das geht nicht
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - perfekt
+    - wundervoll
+    - großartig
+    - Ich fühle mich wie ein König
+    - wundervoll
+    - Ich fühle mich wirklich gut
+    - Ich bin großartig
+    - Ich bin super
+    - Ich werde die Welt retten
+    - super glücklich
+    - extrem gut
+    - so so gut
+    - so gut
+    - so perfekt
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - mein Tag war schrecklich
+    - Ich bin traurig
+    - Ich fühl mich nicht gut
+    - Ich bin enttäuscht
+    - Ich bin super traurig
+    - traurig
+    - sehr traurig
+    - unglücklich
+    - nicht gut
+    - nicht wirklich gut
+    - extrem traurig
+    - so traurig
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - bist du ein Bot?
+    - bist du ein Mensch?
+    - spreche ich mit einem Bot?
+    - spreche ich mit einem Mensch?
 
 - intent: own_cup_in_kiosk
   examples: |
