@@ -66,4 +66,4 @@ Die Dateien der externen Dokumentation wurden per Mail übergeben um im Folgende
 - Rasa Ergebnisse *(Datei: `RASA_accuracy.pdf`)*
 - Demo-Video *(Datei: `Demo_Video.mp4`)*
 #### 2. Interne Code-Dokumentation:
-Die interne Dokumentation ist eine Code-Dokumentation und wurde mit `pdoc3` umgesetzt. Die zugehörigen *HTML-Dateien* befinden sich im Ordner `doc`.
+Die interne Dokumentation ist eine Code-Dokumentation und wurde mit `pdoc3` umgesetzt. Die zugehörigen *HTML-Dateien* befinden sich im Ordner `./models/1/doc/`.
